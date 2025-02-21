@@ -56,3 +56,13 @@ const Marcos: Pessoa = { nome: "Marcos", email: "marcos@email.com" };
 repositorio.salvar(Marcos);
 repositorio.salvar(Maria);
 console.log(repositorio.obterTodos());
+
+
+//exercicio 5
+
+type RespostaServidor = string | boolean;
+
+function processarResposta(respostaServidor : RespostaServidor){
+    console.log(respostaServidor)
+}
+processarResposta("eita");
