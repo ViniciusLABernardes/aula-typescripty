@@ -66,3 +66,24 @@ function processarResposta(respostaServidor : RespostaServidor){
     console.log(respostaServidor)
 }
 processarResposta("eita");
+
+//exercicio 6
+
+type Estudante = {
+    nome:string;
+    curso:string;
+}
+type Trabalhador = {
+    empresa:string;
+    cargo:string
+}
+
+type EstudandeTrabalhador = Estudante & Trabalhador;
+
+const estudanteTrabalhador: EstudandeTrabalhador ={
+    nome:"Paulo",
+    curso:"Elétrica",
+    empresa:"ENEL",
+    cargo:"técnico de instalação"
+}
+console.log(estudanteTrabalhador);
